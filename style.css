@@ -1,3 +1,7 @@
+:root {
+  --select: rgb(51, 186, 248);
+}
+
 * {
   font-family: Karla;
   margin: 0;
@@ -31,6 +35,15 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   font-size: 13px;
+}
+
+header nav ul li:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+header nav ul li {
+  color: var(--select);
 }
 
 body {
@@ -116,7 +129,7 @@ main section .cardCalcul a {
 main section .cardCalcul a:hover {
   transform: scale(1.05);
   transition: 0.2s;
-  border: solid rgb(51, 186, 248);
+  border: solid var(--select);
 }
 
 footer {
