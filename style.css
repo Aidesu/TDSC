@@ -1,0 +1,174 @@
+* {
+  font-family: Karla;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  background-color: rgba(22, 22, 22, 0.671);
+}
+
+header nav #titleNav {
+  padding: 15px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+body {
+  background-color: #333;
+}
+
+body main #mainPic {
+  background-image: url(ressources/img/MainBg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50vh;
+}
+
+body main #mainPicNA {
+  background-image: url(ressources/img/MainBg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 30vh;
+}
+
+body main #mainPicNA div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  background-color: #00000062;
+  width: 100%;
+  height: 100%;
+}
+
+body main #mainPic div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  background-color: #00000062;
+  width: 100%;
+  height: 100%;
+}
+
+body main #mainPic h2 {
+  font-size: 40px;
+}
+
+body main #mainPic p {
+  font-size: 15px;
+}
+
+section {
+  margin-top: 5vh;
+}
+
+main section .cardCalcul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  background-color: #0f0f0fbd;
+  width: 25%;
+  height: 10rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+}
+
+main section .cardCalcul a {
+  text-decoration: none;
+  border: solid white 2px;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+main section .cardCalcul a:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+  border: solid rgb(51, 186, 248);
+}
+
+footer {
+  margin-top: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  width: 100%;
+  padding: 30px;
+}
+
+footer h3 {
+  font-size: 10px;
+}
+footer ul {
+  list-style: none;
+}
+
+footer ul {
+  font-size: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+}
+
+/* Gravity Forces Part */
+
+main #newtonUniversalG {
+  display: flex;
+  flex-direction: column;
+}
+
+main #newtonUniversalG #nTUCalc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+main #newtonUniversalG #nTUCalc input {
+  margin-bottom: 25px;
+  width: 25%;
+}
+
+main #newtonUniversalG #newtonResult {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
