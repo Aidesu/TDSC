@@ -102,6 +102,11 @@ section {
   margin-top: 5vh;
 }
 
+body main .sectionCard {
+  display: flex;
+  justify-content: center;
+}
+
 main section .cardCalcul {
   display: flex;
   flex-direction: column;
@@ -184,4 +189,44 @@ main #newtonUniversalG #newtonResult {
   display: flex;
   justify-content: center;
   gap: 5px;
+}
+
+main #copyMassEx ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+main #copyMassEx ul li button {
+  width: 100px;
+  height: 25px;
+}
+
+main #copyMassEx {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+main body section #calculate{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+main body #calculatorEntity #calculate ul li button {
+  width: 25px;
+  height: 25px;
+}
+
+main body section #calculate ul {
+  display: grid;
+  grid-column: 25px, 25px, 25px;
+  grid-row: auto;
 }

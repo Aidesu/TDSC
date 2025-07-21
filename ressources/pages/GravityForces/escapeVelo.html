@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TDS Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>TDSC Newton law</title>
+    <link rel="stylesheet" href="../../../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,19 +38,19 @@
     <main>
       <div id="mainPicNA">
         <div>
-          <h2>Newton's law of universal gravitation</h2>
-          <p>$$ F = G \frac{m_1 m_2}{r^2} $$</p>
+          <h2>Calculation of Gravity Field</h2>
+          <p>$$ v_e= \sqrt {\frac {2GM}{r}} $$</p>
         </div>
       </div>
       <section id="newtonUniversalG">
         <div id="nTUCalc">
-          <label for="m1Input">Object mass 1 (in kg)</label>
-          <input type="number" id="m1Input" />
-          <label for="m2Input">Object mass 2 (in kg)</label>
-          <input type="number" id="m2Input" />
-          <label for="rInput">Radius (in meters)</label>
+          <label for="mInput">Object mass (in kg)</label>
+          <input type="number" id="mInput" />
+          <label for="rInput">Radius (in kg)</label>
           <input type="number" id="rInput" />
-          <button id="resultBtn">Done</button>
+          <label for="gInput">Gravity Force</label>
+          <input type="number" id="gInput" />
+          <button id="resultBtnEscapeVelo">Done</button>
         </div>
         <div id="newtonResult">
           <p>F =</p>
@@ -71,6 +71,6 @@
         <li><a href="#">Elements</a></li>
       </ul>
     </footer>
-    <script src="src/js/script.js"></script>
+    <script src="../../../src/js/escapeVelo.js"></script>
   </body>
 </html>

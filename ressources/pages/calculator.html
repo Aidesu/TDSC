@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TDS Calculator</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>TDSC Newton law</title>
+    <link rel="stylesheet" href="../../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,10 +27,8 @@
         </div>
         <div>
           <ul>
-            <li>Home</li>
-            <li>
-              <a href="ressources/pages/calculator.html">Calculator</a>
-            </li>
+            <li><a href="/index.html">Home</a></li>
+            <li>Calculator</li>
             <li><a href="#">Elements</a></li>
             <li><a href="#">About</a></li>
           </ul>
@@ -38,28 +36,26 @@
       </nav>
     </header>
     <main>
-      <div id="mainPic">
+      <div id="mainPicNA">
         <div>
-          <h2>The Deafiaa Space Calculator</h2>
-          <p>Your toolkit for essential astrophysics calculations</p>
+          <h2>Calculator</h2>
+          <p>$$ v_e= \sqrt {\frac {2GM}{r}} $$</p>
         </div>
       </div>
-      <section class="sectionCard">
-        <div id="gravityForcesDivNewton" class="cardCalcul">
-          <h3>Gravity and Forces</h3>
-          <p>According to Newton's law,</p>
-          <p>\( F = G \frac{m_1 m_2}{r^2} \)</p>
-          <a href="/ressources/pages/GravityForces/NewtonCalcul.html"
-            >See more</a
-          >
-        </div>
-        <div id="gravityForcesDiv" class="cardCalcul">
-          <h3>Gravity and Forces</h3>
-          <p>According to Newton's law,</p>
-          <p>\( F = G \frac{m_1 m_2}{r^2} \)</p>
-          <a href="/ressources/pages/GravityForces/GravityField.html"
-            >See more</a
-          >
+      <section id="calculatorEntity">
+        <div id="calcutate">
+          <ul>
+            <li><button id="btnCalc1" class="btnCalc">1</button></li>
+            <li><button id="btnCalc2" class="btnCalc">2</button></li>
+            <li><button id="btnCalc3" class="btnCalc">3</button></li>
+            <li><button id="btnCalc4" class="btnCalc">4</button></li>
+            <li><button id="btnCalc5" class="btnCalc">5</button></li>
+            <li><button id="btnCalc6" class="btnCalc">6</button></li>
+            <li><button id="btnCalc7" class="btnCalc">7</button></li>
+            <li><button id="btnCalc8" class="btnCalc">8</button></li>
+            <li><button id="btnCalc9" class="btnCalc">9</button></li>
+            <li><button id="btnCalc0" class="btnCalc">0</button></li>
+          </ul>
         </div>
       </section>
     </main>
@@ -76,5 +72,6 @@
         <li><a href="#">Elements</a></li>
       </ul>
     </footer>
+    <script src="../../../src/js/calculator.js"></script>
   </body>
 </html>
