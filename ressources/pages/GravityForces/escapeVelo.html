@@ -27,33 +27,31 @@
         </div>
         <div>
           <ul>
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="../../../index.html">Home</a></li>
             <li>Calculator</li>
             <li><a href="#">Elements</a></li>
             <li><a href="#">About</a></li>
           </ul>
         </div>
       </nav>
-    </header>
-    <main>
       <div id="mainPicNA">
         <div>
-          <h2>Calculation of Gravity Field</h2>
+          <h2>Escape Velocity Calculation</h2>
           <p>$$ v_e= \sqrt {\frac {2GM}{r}} $$</p>
         </div>
       </div>
+    </header>
+    <main>
       <section id="newtonUniversalG">
         <div id="nTUCalc">
           <label for="mInput">Object mass (in kg)</label>
           <input type="number" id="mInput" />
-          <label for="rInput">Radius (in kg)</label>
+          <label for="rInput">Radius (in metter)</label>
           <input type="number" id="rInput" />
-          <label for="gInput">Gravity Force</label>
-          <input type="number" id="gInput" />
-          <button id="resultBtnEscapeVelo">Done</button>
+          <button id="resultBtn">Done</button>
         </div>
-        <div id="newtonResult">
-          <p>F =</p>
+        <div id="divResult">
+          <p>v =</p>
           <p id="resultP"></p>
         </div>
       </section>

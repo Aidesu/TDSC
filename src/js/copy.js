@@ -18,10 +18,9 @@ const copyArray = {
 console.log("initializing complete");
 //############################## Copy Button ##############################
 
-document.getElementById(copyArray.id[0]).addEventListener("click", () => {
+document.getElementById("copySun").addEventListener("click", () => {
   try {
-    navigator.clipboard.writeText(copyArray.calc[0]);
-    console.log(copyArray.calc);
+    navigator.clipboard.writeText(sun);
   } catch (e) {
     console.log(e.message);
   }

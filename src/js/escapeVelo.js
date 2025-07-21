@@ -1,20 +1,19 @@
+const MASS_INPUT = document.getElementById("mInput");
+const RADIUS_INPUT = document.getElementById("rInput");
 const NEWTON_GRAVITY = 6.674e-11;
-console.log(`initializing ${NEWTON_GRAVITY}`);
 
-const MASS = document.getElementById("mInput");
-const RADIUS = document.getElementById("rInput");
-const GRAVITY = document.getElementById("gInput");
-
-let RKm = 6380;
-let gravityF = 9.8;
-let massAstre = 5.972e24;
-
-let CMASS = parseFloat(MASS);
-
-document.getElementById("resultBtnEscapeVelo").addEventListener("click", () => {
+document.getElementById("resultBtn").addEventListener("click", () => {
   try {
-    console.log("CMASS");
-  } catch (e) {
-    console.log(e.message);
+
+    const MASS = parseFloat(MASS_INPUT.value);
+    const RADIUS = parseFloat(RADIUS_INPUT.value);
+
+    const RESULT = Math.sqrt((2 * NEWTON_GRAVITY * MASS) / RADIUS);
+    document.getElementById("resultP").innerHTML = RESULT.toFixed(2) + " m/s";
+    console.log(RESULT);
+
+  } catch(e) {
+    console.log(e);
   }
 });
+
