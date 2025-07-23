@@ -1,7 +1,10 @@
+// recuperation des input et declaration de la constante de gravitation universelle
+
 const MASS_INPUT = document.getElementById("mInput");
 const RADIUS_INPUT = document.getElementById("rInput");
 const NEWTON_GRAVITY = 6.674e-11;
 
+// function on click resultat
 document.getElementById("resultBtn").addEventListener("click", () => {
   try {
 

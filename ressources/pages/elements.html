@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TDSC Newton law</title>
-    <link rel="stylesheet" href="../../../style.css" />
+    <title>TDS Calculator</title>
+    <link rel="stylesheet" href="../../style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,36 +27,20 @@
         </div>
         <div>
           <ul>
-            <li><a href="../../../index.html">Home</a></li>
-            <li>
-              <a href="../calculator.html">Calculator</a>
-            </li>
-            <li><a href="../elements.html">Elements</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../pages/calculator.html">Calculator</a></li>
+            <li>Elements</li>
             <li><a href="#">About</a></li>
           </ul>
         </div>
       </nav>
-      <div id="mainPicNA">
+      <div id="mainPic">
         <div>
-          <h2>Escape Velocity Calculation</h2>
-          <p>$$ v_e= \sqrt {\frac {2GM}{r}} $$</p>
+          <h2>Elements</h2>
         </div>
-      </div>
     </header>
     <main>
-      <section id="newtonUniversalG">
-        <div id="nTUCalc">
-          <label for="mInput">Object mass (in kg)</label>
-          <input type="number" id="mInput" />
-          <label for="rInput">Radius (in metter)</label>
-          <input type="number" id="rInput" />
-          <button id="resultBtn">Done</button>
-        </div>
-        <div id="divResult">
-          <p>v =</p>
-          <p id="resultP"></p>
-        </div>
-      </section>
+      <script src="../../src/js/elements.js"></script>
     </main>
     <footer>
       <h3>The Deafiaa Space Compagny. © All rights reserved</h3>
@@ -71,6 +55,5 @@
         <li><a href="#">Elements</a></li>
       </ul>
     </footer>
-    <script src="../../../src/js/escapeVelo.js"></script>
   </body>
 </html>
