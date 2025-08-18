@@ -457,3 +457,40 @@ main #copyMassEx {
   text-align: center;
   font-weight: 500;
 }
+
+/** CALC SECTION!*/
+
+.calculatorSection {
+  margin: 0 auto;
+  width: 14rem;
+  height: 18rem;
+  background-color: #1e5baf;
+}
+
+.calculatorSection #calcContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.calculatorSection div div button {
+  background-color: blue;
+}
+
+.calculatorSection #calcBtnDiv {
+  display: grid;
+  grid-template-columns: repeat(4, 3rem);
+}
+
+.calculatorSection #calcScreen {
+  height: 2rem;
+  width: 12rem;
+  background-color: antiquewhite;
+  margin-top: 2rem;
+}
+
+.calculatorSection #calcScreen p {
+  color: #333;
+}
