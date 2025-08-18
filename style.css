@@ -51,10 +51,12 @@ header nav ul li {
 
 body {
   background-color: #333;
+  width: 100%;
 }
 
 body main {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -164,7 +166,6 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 10vw;
-  width: 100%;
   padding: 30px;
   background-color: black;
 }
@@ -461,10 +462,10 @@ main #copyMassEx {
 /** CALC SECTION!*/
 
 .calculatorSection {
-  margin: 0 auto;
-  width: 14rem;
-  height: 18rem;
-  background-color: #1e5baf;
+  margin: 2rem auto;
+  width: 25rem;
+  height: 30rem;
+  background-color: rgb(52, 0, 131);
 }
 
 .calculatorSection #calcContent {
@@ -476,21 +477,38 @@ main #copyMassEx {
 }
 
 .calculatorSection div div button {
-  background-color: blue;
+  background-color: #922db1;
+  height: 4rem;
+  width: 4rem;
+  font-size: 25px;
 }
 
 .calculatorSection #calcBtnDiv {
   display: grid;
-  grid-template-columns: repeat(4, 3rem);
+  grid-template-columns: repeat(4, 4rem);
+}
+
+.calculatorSection #calcBtnDiv :nth-child(5),
+:nth-child(6),
+:nth-child(7),
+:nth-child(9),
+:nth-child(10),
+:nth-child(11),
+:nth-child(13),
+:nth-child(14),
+:nth-child(15),
+:nth-child(17) {
+  background-color: #c345b2 !important;
 }
 
 .calculatorSection #calcScreen {
-  height: 2rem;
-  width: 12rem;
+  height: 4rem;
+  width: 22rem;
   background-color: antiquewhite;
   margin-top: 2rem;
 }
 
 .calculatorSection #calcScreen p {
   color: #333;
+  font-size: 25px;
 }

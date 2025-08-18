@@ -8,7 +8,7 @@ const calcDiv = document.createElement("div");
 const calcScreen = document.createElement("div");
 const calcScreenContent = document.createElement("p");
 const calcBtnDiv = document.createElement("div");
-const calcBtn = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+", "-", "x", "/", "=", "C", "(", ")"];
+const calcBtn = ["C", ".", "/", "-", "7", "8", "9", "x", "4", "5", "6", "+", "1", "2", "3", "=", "0", "(", ")"];
 
 calcSection.appendChild(calcDiv);
 calcDiv.append(calcScreen, calcBtnDiv);
@@ -20,7 +20,7 @@ calcBtnDiv.id = "calcBtnDiv";
 
 let screenDisplay = "";
 let numbers = [];
-let writingNmb = 0;
+let writingNmb = "";
 let calcul = "";
 
 calcBtn.forEach(e => {
@@ -29,40 +29,44 @@ calcBtn.forEach(e => {
     calcBtnDiv.appendChild(btn)
     btn.addEventListener("click", () => {
         if (e === "="){
-            numbers.push(Math.floor(writingNmb));
+            if (writingNmb !== ""){
+                numbers.push(Number(writingNmb));
+            }
             if (numbers.length >= 2){
             const result = addition (numbers, calcul)
             console.log(result)
             screenDisplay = result;
             calcScreenContent.textContent = screenDisplay;
-            numbers = [];
-            numbers.push(result);
+            numbers = [result];
             console.log(numbers)
-            writingNmb = 0;
+            writingNmb = "";
             }
         } else if (e === "C"){
             screenDisplay = "";
             calcScreenContent.textContent = screenDisplay;
-            writingNmb = 0;
+            writingNmb = "";
             numbers = [];
         } else if (e === "+"){
+            if (writingNmb !== "") {
+                numbers.push(Number(writingNmb))
+            }    
             screenDisplay += e;
-            numbers.push(Math.floor(writingNmb))
-            writingNmb = 0;
+            writingNmb = "";
             calcul = "addition";
+            console.log(numbers)
         } else if (e === "x"){
+            if (writingNmb !== "") {
+                numbers.push(Number(writingNmb))
+            }            
             screenDisplay += e;
-            numbers.push(Math.floor(writingNmb))
-            if (numbers.length === 0){
-            writingNmb = 0;
-            }
+            writingNmb = "";
+            console.log(numbers)
             calcul = "multiplication";
         } else if (e === "-"){
-            screenDisplay += e;
-            if (numbers.length === 0){
-            numbers.push(Math.floor(writingNmb))
-            writingNmb = 0;
+            if (writingNmb !== "") {
+                numbers.push(Number(writingNmb))
             }
+            screenDisplay += e;
             calcul = "soustraction";
         }
         else {
