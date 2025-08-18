@@ -464,8 +464,9 @@ main #copyMassEx {
 .calculatorSection {
   margin: 2rem auto;
   width: 25rem;
-  height: 30rem;
+  height: 31rem;
   background-color: rgb(52, 0, 131);
+  border-radius: 15px;
 }
 
 .calculatorSection #calcContent {
@@ -481,11 +482,13 @@ main #copyMassEx {
   height: 4rem;
   width: 4rem;
   font-size: 25px;
+  border: solid antiquewhite 1px;
+  margin: 0.1rem;
 }
 
 .calculatorSection #calcBtnDiv {
   display: grid;
-  grid-template-columns: repeat(4, 4rem);
+  grid-template-columns: repeat(4, 4.2rem);
 }
 
 .calculatorSection #calcBtnDiv :nth-child(5),
@@ -497,8 +500,12 @@ main #copyMassEx {
 :nth-child(13),
 :nth-child(14),
 :nth-child(15),
-:nth-child(17) {
+:nth-child(18) {
   background-color: #c345b2 !important;
+}
+
+.calculatorSection #calcBtnDiv :nth-child(20) {
+  background-color: #d36ecb !important;
 }
 
 .calculatorSection #calcScreen {

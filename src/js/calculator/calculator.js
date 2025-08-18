@@ -8,7 +8,7 @@ const calcDiv = document.createElement("div");
 const calcScreen = document.createElement("div");
 const calcScreenContent = document.createElement("p");
 const calcBtnDiv = document.createElement("div");
-const calcBtn = ["C", ".", "/", "-", "7", "8", "9", "x", "4", "5", "6", "+", "1", "2", "3", "=", "0", "(", ")"];
+const calcBtn = ["C", "(", ")", "-", "7", "8", "9", "x", "4", "5", "6", "+", "1", "2", "3", "/", "00", "0", ".", "="];
 
 calcSection.appendChild(calcDiv);
 calcDiv.append(calcScreen, calcBtnDiv);
