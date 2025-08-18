@@ -486,6 +486,12 @@ main #copyMassEx {
   margin: 0.1rem;
 }
 
+.calculatorSection div div button:hover {
+  background-color: #782591;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
 .calculatorSection #calcBtnDiv {
   display: grid;
   grid-template-columns: repeat(4, 4.2rem);
@@ -504,8 +510,28 @@ main #copyMassEx {
   background-color: #c345b2 !important;
 }
 
+.calculatorSection #calcBtnDiv :nth-child(5):hover,
+:nth-child(6):hover,
+:nth-child(7):hover,
+:nth-child(9):hover,
+:nth-child(10):hover,
+:nth-child(11):hover,
+:nth-child(13):hover,
+:nth-child(14):hover,
+:nth-child(15):hover,
+:nth-child(18):hover {
+  background-color: #a73c98 !important;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
 .calculatorSection #calcBtnDiv :nth-child(20) {
   background-color: #d36ecb !important;
+}
+
+.calculatorSection #calcBtnDiv :nth-child(20):hover {
+  background-color: #9b5095 !important;
+  cursor: pointer;
 }
 
 .calculatorSection #calcScreen {
@@ -518,4 +544,6 @@ main #copyMassEx {
 .calculatorSection #calcScreen p {
   color: #333;
   font-size: 25px;
+  font-family: Orbitron;
+  margin: 1rem;
 }

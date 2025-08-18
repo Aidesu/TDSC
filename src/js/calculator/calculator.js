@@ -1,5 +1,5 @@
 console.log("init from calculator")
-import { addition } from "./calculFunction.js";
+import { calculate } from "./calculFunction.js";
 
 //* ########################## Calculator ##########################
 
@@ -33,7 +33,7 @@ calcBtn.forEach(e => {
                 numbers.push(Number(writingNmb));
             }
             if (numbers.length >= 2){
-            const result = addition (numbers, calcul)
+            const result = calculate (numbers, calcul)
             console.log(result)
             screenDisplay = result;
             calcScreenContent.textContent = screenDisplay;
@@ -47,27 +47,34 @@ calcBtn.forEach(e => {
             writingNmb = "";
             numbers = [];
         } else if (e === "+"){
+            reloadScreen(e)
             if (writingNmb !== "") {
                 numbers.push(Number(writingNmb))
-            }    
-            screenDisplay += e;
+            }
             writingNmb = "";
             calcul = "addition";
             console.log(numbers)
         } else if (e === "x"){
-            if (writingNmb !== "") {
-                numbers.push(Number(writingNmb))
-            }            
-            screenDisplay += e;
-            writingNmb = "";
-            console.log(numbers)
-            calcul = "multiplication";
-        } else if (e === "-"){
+            reloadScreen(e)
             if (writingNmb !== "") {
                 numbers.push(Number(writingNmb))
             }
-            screenDisplay += e;
+            writingNmb = "";
+            calcul = "multiplication";
+        } else if (e === "-"){
+            reloadScreen(e)
+            if (writingNmb !== "") {
+                numbers.push(Number(writingNmb))
+            }
+            writingNmb = "";
             calcul = "soustraction";
+        }else if (e === "/"){
+            reloadScreen(e)
+            if (writingNmb !== "") {
+                numbers.push(Number(writingNmb))
+            }
+            writingNmb = "";
+            calcul = "division";
         }
         else {
         screenDisplay += e;
@@ -77,3 +84,8 @@ calcBtn.forEach(e => {
         }
     })
 });
+
+function reloadScreen(e) {
+    screenDisplay += e;
+    calcScreenContent.textContent = screenDisplay;
+}
